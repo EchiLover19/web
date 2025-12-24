@@ -1,0 +1,102 @@
+/* css/discover.css */
+/* Discover More NFTs section */
+
+.discover {
+    padding: 80px 0;
+  }
+  
+  .discover__head {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 24px;
+    margin-bottom: 60px;
+  }
+  
+  .discover__title {
+    font-size: 38px;
+    font-weight: 700;
+  }
+  
+  .discover__subtitle {
+    margin-top: 10px;
+    font-size: 18px;
+    color: var(--text-muted);
+  }
+  
+  /* Grid */
+  .discover__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+  
+  /* NFT tile */
+  .nft-tile {
+    background: var(--bg-2);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+  }
+  
+  .nft-tile__image {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+  }
+  
+  .nft-tile__body {
+    padding: 20px 22px;
+    display: grid;
+    gap: 12px;
+  }
+  
+  .nft-tile__title {
+    font-size: 22px;
+    font-weight: 600;
+  }
+  
+  /* Meta */
+  .nft-tile__meta {
+    margin-top: 6px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+  
+  .nft-tile__meta-label {
+    display: block;
+    font-size: 12px;
+    color: var(--text-muted);
+  }
+  
+  .nft-tile__meta-value {
+    margin-top: 4px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  /* Responsive */
+  @media (max-width: 1000px) {
+    .discover__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .discover__head {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .discover {
+      padding: 60px 0;
+    }
+  
+    .discover__grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  

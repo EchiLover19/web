@@ -1,0 +1,74 @@
+/* css/how-it-works.css */
+/* How it works section */
+
+.how {
+    padding: 80px 0;
+  }
+  
+  .how__head {
+    margin-bottom: 60px;
+  }
+  
+  .how__title {
+    font-size: 38px;
+    font-weight: 700;
+  }
+  
+  .how__subtitle {
+    margin-top: 10px;
+    font-size: 18px;
+    color: var(--text-muted);
+  }
+  
+  /* Grid */
+  .how__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+  
+  /* Card */
+  .how-card {
+    background: var(--bg-2);
+    border-radius: var(--radius-lg);
+    padding: 30px 24px;
+    text-align: center;
+  }
+  
+  .how-card__icon {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 20px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.12);
+  }
+  
+  .how-card__title {
+    font-size: 22px;
+    font-weight: 600;
+  }
+  
+  .how-card__text {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--text-muted);
+  }
+  
+  /* Responsive */
+  @media (max-width: 1000px) {
+    .how__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .how {
+      padding: 60px 0;
+    }
+  
+    .how__grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
